@@ -1,5 +1,5 @@
 import SearchBar from "../../components/searchBar/SearhBar";
-import "./HomePage.scss";
+import "./homePage.scss";
 
 const HomePage = () => {
   return (
