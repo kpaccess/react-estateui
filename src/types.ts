@@ -9,3 +9,13 @@ export type ListDataProps = {
   latitude: number;
   longitude: number;
 };
+
+export type SingleDataProps = {
+  images: string[];
+  size: number;
+  city: string;
+  school: string;
+  bus: string;
+  restaurant: string;
+  description: string;
+} & Omit<ListDataProps, "img">;

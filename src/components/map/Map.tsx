@@ -1,10 +1,10 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import "./map.scss";
 import "leaflet/dist/leaflet.css";
-import { ListDataProps } from "../../types";
+import { ListDataProps, SingleDataProps } from "../../types";
 import Pin from "../pin/Pin";
 
-const Map = ({ items }: { items: ListDataProps[] }) => {
+const Map = ({ items }: { items: ListDataProps[] | SingleDataProps[] }) => {
   return (
     <MapContainer
       center={[51.505, -0.09]}
