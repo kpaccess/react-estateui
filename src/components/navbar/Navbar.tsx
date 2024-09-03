@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 const Navbar = () => {
@@ -10,10 +11,11 @@ const Navbar = () => {
           <img src="./logo.png" alt="log" />
           <span>PradhanEstate</span>
         </a>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Others</a>
-        <a href="/">Contact</a>
+        <Link to="/link">Link</Link>
+        <Link to="/">Home</Link>
+        <Link to="/">About</Link>
+        <Link to="/">Others</Link>
+        <Link to="/">Contact</Link>
       </div>
       <div className="right">
         <a href="/">Sign in</a>
