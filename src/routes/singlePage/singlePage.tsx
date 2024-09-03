@@ -5,7 +5,7 @@ import "./singlePage.scss";
 import { SingleDataProps } from "../../types";
 
 const SinglePage = () => {
-  const singleData: SingleDataProps[] = [singlePostData];
+  const singleData: SingleDataProps[] = [singlePostData as SingleDataProps];
   return (
     <div className="single-page">
       <div className="details">

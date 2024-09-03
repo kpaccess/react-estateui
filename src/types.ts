@@ -18,4 +18,5 @@ export type SingleDataProps = {
   bus: string;
   restaurant: string;
   description: string;
-} & Omit<ListDataProps, "img">;
+  img: string;
+} & ListDataProps;
